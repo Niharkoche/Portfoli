@@ -1,6 +1,4 @@
-<div align="center">
 
-<img src="avatar.png" alt="Pixel art avatar of Nihar Koche" width="140" />
 
 # 🕹️ NIHAR KOCHE — PLAYER 1 PORTFOLIO
 
