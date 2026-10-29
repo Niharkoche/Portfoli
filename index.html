@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nihar Koche | Player 1 Portfolio</title>
+  <meta name="description" content="Retro arcade-style portfolio of Nihar Koche, AI & ML undergraduate." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- HUD / NAV -->
+  <header class="hud">
+    <a href="#home" class="logo">NK<span class="blink">_</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+    <nav id="nav">
+      <a href="#about">PROFILE</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#quests">QUESTS</a>
+      <a href="#achievements">BADGES</a>
+      <a href="#save">SAVE FILE</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+    <div class="hud-right">
+      <span class="score">SCORE <b id="score">000000</b></span>
+      <button class="sound-btn" id="soundBtn" title="Toggle sound">SFX: OFF</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="coin-field" id="coinField" aria-hidden="true"></div>
+      <p class="tag">1 PLAYER GAME</p>
+      <h1 class="glitch" data-text="NIHAR KOCHE">NIHAR KOCHE</h1>
+      <p class="role">&gt; <span id="typed"></span><span class="cursor">&#9608;</span></p>
+      <p class="sub">B.Tech CSE (AI &amp; ML) &bull; Nagpur, India</p>
+      <div class="hero-btns">
+        <a href="#about" class="btn btn-primary" data-sfx>PRESS START</a>
+        <a href="#contact" class="btn" data-sfx>CONTINUE?</a>
+      </div>
+      <p class="hint">Tip: collect the floating coins &#9679; &nbsp;|&nbsp; Try the Konami code &uarr;&uarr;&darr;&darr;&larr;&rarr;&larr;&rarr;BA</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="title">PLAYER PROFILE</h2>
+      <div class="grid two">
+        <div class="panel avatar-panel">
+          <div class="avatar" aria-label="Pixel avatar">
+            <div class="px px-hair"></div>
+            <div class="px px-face"></div>
+            <div class="px px-eye l"></div>
+            <div class="px px-eye r"></div>
+            <div class="px px-mouth"></div>
+            <div class="px px-body"></div>
+          </div>
+          <p class="name-tag">PLAYER 1</p>
+          <p class="class-tag">CLASS: AI / ML ENGINEER</p>
+        </div>
+        <div class="panel">
+          <p class="body-text">
+            Computer Science undergraduate specializing in <b>Artificial Intelligence and Machine Learning</b>,
+            with a strong foundation in programming, data structures, algorithms and problem-solving.
+            I build end-to-end software and AI/ML projects, from data preprocessing to model development and evaluation,
+            and I enjoy learning new tech, collaborating with a team and shipping under tight deadlines.
+          </p>
+          <div class="stats">
+            <div class="stat"><span class="num" data-count="8.66" data-decimals="2">0</span><span class="lbl">CGPA</span></div>
+            <div class="stat"><span class="num" data-count="95.6" data-decimals="1">0</span><span class="lbl">GAN ACC %</span></div>
+            <div class="stat"><span class="num" data-count="2">0</span><span class="lbl">MAJOR QUESTS</span></div>
+            <div class="stat"><span class="num" data-count="2">0</span><span class="lbl">BADGES</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="title">SKILL TREE</h2>
+      <div class="grid two">
+        <div class="panel">
+          <h3>&#9876; WEAPONS (LANGUAGES)</h3>
+          <div class="skill"><span>PYTHON</span><div class="bar"><i data-level="90"></i></div></div>
+          <div class="skill"><span>C++</span><div class="bar"><i data-level="85"></i></div></div>
+          <div class="skill"><span>C</span><div class="bar"><i data-level="85"></i></div></div>
+          <div class="skill"><span>SQL / POSTGRES</span><div class="bar"><i data-level="80"></i></div></div>
+          <div class="skill"><span>HTML / CSS</span><div class="bar"><i data-level="70"></i></div></div>
+        </div>
+        <div class="panel">
+          <h3>&#10024; MAGIC (AI / ML)</h3>
+          <div class="skill"><span>CNN</span><div class="bar"><i data-level="85"></i></div></div>
+          <div class="skill"><span>GAN</span><div class="bar"><i data-level="80"></i></div></div>
+          <div class="skill"><span>SUPERVISED ML</span><div class="bar"><i data-level="80"></i></div></div>
+          <div class="skill"><span>UNSUPERVISED ML</span><div class="bar"><i data-level="70"></i></div></div>
+          <div class="skill"><span>DSA &amp; OOP</span><div class="bar"><i data-level="85"></i></div></div>
+        </div>
+      </div>
+      <div class="panel inventory">
+        <h3>&#127890; INVENTORY (TOOLS)</h3>
+        <ul class="chips">
+          <li>Git / GitHub</li><li>VS Code</li><li>Google Colab</li><li>Jupyter Notebook</li>
+          <li>Figma</li><li>TensorFlow</li><li>FAISS</li><li>RDBMS</li><li>Query Optimization</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- QUESTS / PROJECTS -->
+    <section id="quests" class="section">
+      <h2 class="title">QUEST LOG</h2>
+      <div class="grid two">
+        <article class="panel quest">
+          <span class="level">LEVEL 1</span>
+          <h3>GAN-BASED ORAL CANCER DETECTION USING GRAPH-RAG</h3>
+          <p class="tech">Python &bull; TensorFlow &bull; Deep Learning &bull; CycleGAN &bull; FAISS</p>
+          <ul>
+            <li>Designed and trained a Deep Convolutional GAN (generator + discriminator) to synthesize realistic blood cell images from a real-world dataset.</li>
+            <li>Built the preprocessing and normalization pipeline; tuned adversarial training to reach <b>95.6%</b> fake-image detection accuracy.</li>
+            <li>Evaluated performance with loss curves and accuracy metrics to guide iterative improvements.</li>
+          </ul>
+          <span class="status done">STATUS: CLEARED</span>
+        </article>
+        <article class="panel quest">
+          <span class="level">LEVEL 2 &bull; TEAM LEAD</span>
+          <h3>WANI: CNN-BASED SIGN LANGUAGE TO SPEECH</h3>
+          <p class="tech">Python &bull; CNN &bull; Computer Vision</p>
+          <ul>
+            <li>Leading a team building an AI assistive system that translates sign-language gestures into real-time text and speech for people with speech impairments.</li>
+            <li>Designed a CNN gesture-recognition pipeline with image preprocessing and classification on a labeled gesture dataset.</li>
+            <li>Coordinating the team to improve accuracy, optimize performance and enhance real-time recognition.</li>
+          </ul>
+          <span class="status live">STATUS: IN PROGRESS</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+      <h2 class="title">ACHIEVEMENTS UNLOCKED</h2>
+      <div class="grid three">
+        <div class="panel badge">
+          <div class="icon">&#127941;</div>
+          <h3>C PROGRAMMING</h3>
+          <p>Spoken Tutorial Project, IIT Bombay</p>
+          <p class="meta">Score 75.00% &bull; Jan 2025</p>
+        </div>
+        <div class="panel badge">
+          <div class="icon">&#127942;</div>
+          <h3>RDBMS - POSTGRESQL</h3>
+          <p>Spoken Tutorial Project, IIT Bombay</p>
+          <p class="meta">Score 92.50% &bull; Jun 2026</p>
+        </div>
+        <div class="panel badge">
+          <div class="icon">&#128081;</div>
+          <h3>TEAM LEADER</h3>
+          <p>Smart India Hackathon (college round) and WANI Project: problem selection, task delegation, solution design and module integration.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="save" class="section">
+      <h2 class="title">SAVE FILE (EDUCATION)</h2>
+      <div class="timeline">
+        <div class="slot panel">
+          <span class="slot-no">SLOT 1</span>
+          <h3>B.TECH, CSE (AI &amp; ML)</h3>
+          <p>G. H. Raisoni College of Engineering, Nagpur</p>
+          <p class="meta">2023 &ndash; 2027 &bull; CGPA 8.66</p>
+        </div>
+        <div class="slot panel">
+          <span class="slot-no">SLOT 2</span>
+          <h3>HIGHER SECONDARY (12TH)</h3>
+          <p>Dada Ramchand Bakhru Sidhu Mahavidyalaya, Nagpur</p>
+          <p class="meta">2023</p>
+        </div>
+        <div class="slot panel">
+          <span class="slot-no">SLOT 3</span>
+          <h3>SECONDARY (10TH)</h3>
+          <p>Shri Mohanlal Rughwani Sindhi Hindi High School, Nagpur</p>
+          <p class="meta">2021</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2 class="title">INSERT COIN TO CONTACT</h2>
+      <div class="panel contact">
+        <p class="body-text center">Ready for the next level? Let's team up.</p>
+        <div class="contact-btns">
+          <a class="btn btn-primary" href="https://github.com/niharkoche" target="_blank" rel="noopener noreferrer" data-sfx>&#9638; GITHUB</a>
+          <a class="btn btn-blue" href="https://www.linkedin.com/in/nihar-koche-3a977a28b/" target="_blank" rel="noopener noreferrer" data-sfx>&#9638; LINKEDIN</a>
+          <a class="btn" href="mailto:niharkoche30@gmail.com" data-sfx>&#9993; EMAIL</a>
+        </div>
+        <p class="meta center">niharkoche30@gmail.com &bull; +91 9119576809 &bull; Nagpur, Maharashtra</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> NIHAR KOCHE &bull; GAME OVER? <span class="blink">PRESS START TO CONTINUE</span></p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
